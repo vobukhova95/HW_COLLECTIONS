@@ -20,8 +20,8 @@ public class GameTest {
         game.register(player3);
         game.register(player4);
 
-        Assertions.assertThrows(NotRegisteredException.class,() -> {
-        game.round("Игорь", "Вика");
+        Assertions.assertThrows(NotRegisteredException.class, () -> {
+            game.round("Игорь", "Вика");
         });
     }
 
@@ -57,9 +57,10 @@ public class GameTest {
         int expected = 1;
         int actual = game.round("Таня", "Вика");
 
-        Assertions.assertEquals(expected,actual);
+        Assertions.assertEquals(expected, actual);
     }
-@Test
+
+    @Test
     public void SecondPlayerMoreStrength() {
         game.register(player1);
         game.register(player2);
@@ -70,11 +71,11 @@ public class GameTest {
         int expected = 2;
         int actual = game.round("Саша", "Вася");
 
-        Assertions.assertEquals(expected,actual);
+        Assertions.assertEquals(expected, actual);
     }
 
     @Test
-     public void StrengthPlayersEqual() {
+    public void StrengthPlayersEqual() {
         game.register(player1);
         game.register(player2);
         game.register(player3);
@@ -84,6 +85,6 @@ public class GameTest {
         int expected = 0;
         int actual = game.round("Игорь", "Вика");
 
-        Assertions.assertEquals(expected,actual);
+        Assertions.assertEquals(expected, actual);
     }
 }
