@@ -1,4 +1,7 @@
-package ru.netology.qa;
+package ru.netology.qa.manager;
+
+import ru.netology.qa.domain.Player;
+import ru.netology.qa.exception.NotRegisteredException;
 
 import java.util.ArrayList;
 

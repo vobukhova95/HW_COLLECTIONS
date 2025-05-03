@@ -1,8 +1,8 @@
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import ru.netology.qa.Game;
-import ru.netology.qa.NotRegisteredException;
-import ru.netology.qa.Player;
+import ru.netology.qa.manager.Game;
+import ru.netology.qa.exception.NotRegisteredException;
+import ru.netology.qa.domain.Player;
 
 public class GameTest {
     Player player1 = new Player(1, "Вася", 79);

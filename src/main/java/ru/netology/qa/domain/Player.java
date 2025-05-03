@@ -1,4 +1,4 @@
-package ru.netology.qa;
+package ru.netology.qa.domain;
 
 public class Player {
     private int id;
