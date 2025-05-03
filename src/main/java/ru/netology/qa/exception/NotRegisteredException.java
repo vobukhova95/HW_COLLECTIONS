@@ -1,7 +1,7 @@
-package ru.netology.qa;
+package ru.netology.qa.exception;
 
 public class NotRegisteredException extends RuntimeException {
     public NotRegisteredException(String message) {
-      super(message);
+        super(message);
     }
 }
